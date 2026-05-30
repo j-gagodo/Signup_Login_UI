@@ -1,0 +1,382 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: roboto, sans-serif;
+}
+
+/*Hero image and form section*/
+.form-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 50px;
+  font-size: 14px;
+}
+
+/*Links*/
+.form-content a {
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.form-content a:hover {
+  color: #007bff;
+}
+
+/*Image section*/
+.image img {
+  border-radius: 30px;
+  overflow: hidden;
+  width: 458.4px;
+  height: 637.6px;
+}
+
+/*Form section*/
+.main-content {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 30px;
+  width: 450px;
+  margin-top: 50px;
+}
+
+.name-details {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.back {
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+a .back:hover {
+  fill: #007bff;
+}
+
+.title {
+  font-size: 45px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.main-content .login-link {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.main-content .login-link span {
+  font-weight: 600;
+}
+
+.name,
+.email,
+.password {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+}
+
+/*Form inputs*/
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+form input[type="text"]:hover,
+form input[type="email"]:hover,
+form input[type="password"]:hover {
+  border-color: #007bff;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus {
+  border-color: #000;
+  outline: none;
+}
+
+/*Password input with eye icon*/
+.password-icon {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: flex-end;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  top: 7px;
+  fill: #ccc;
+}
+
+/*Login - Forgot password link*/
+.forgot {
+  float: right;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+/*Submit button*/
+form .button input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: 200;
+}
+
+form .button input[type="submit"]:hover {
+  background-color: #007bff;
+  transition: background-color 0.3s ease;
+}
+
+/*Verification code section*/
+.verification-code {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.verification-code .code1 {
+  font-weight: 600;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.verification-code .code,
+.code1 {
+  color: #888;
+  border: 1px solid #888;
+  padding: 10px 45px;
+  border-radius: 40px;
+}
+
+.resend-time {
+  color: #333;
+  text-align: right;
+  margin-bottom: 30px;
+}
+
+.resend-time span {
+  color: #000;
+  font-weight: 600;
+}
+
+/*Checkbox section*/
+.check {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+/*Social media links*/
+.social {
+  margin-bottom: 10px;
+}
+.social-text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.social-text::before,
+.social-text::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+  margin: 0 15px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-weight: 200;
+}
+
+.social-links .google,
+.facebook {
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 15px;
+}
+
+/*.social-links .google:hover,
+.social-links .facebook:hover {
+  border-color: #007bff;
+}*/
+
+/*Mobile responsiveness*/
+
+/*Mobile phone screens*/
+@media (max-width: 768px) {
+  body {
+    margin: 10px 20px;
+  }
+
+  .form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .image img {
+    width: 100%;
+    height: auto;
+    margin-bottom: -30px;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+
+  .main-content .title {
+    font-size: 36px;
+  }
+
+  /*  form .name-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }*/
+
+  .name,
+  .email,
+  .password {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .forgot {
+    margin-top: -5px;
+    text-align: right;
+  }
+
+  .verification-code {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+
+  .verification-code .code,
+  .code1 {
+    color: #888;
+    border: 1px solid #888;
+    padding: 10px 32px;
+    border-radius: 40px;
+  }
+
+  .social {
+    margin-bottom: 20px;
+  }
+
+  .social-links .google a,
+  .social-links .facebook a {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.2;
+  }
+}
+
+/*Tablet screens*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    margin: 30px 40px;
+  }
+  .form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .image img {
+    width: 100%;
+    height: auto;
+    margin-bottom: -30px;
+  }
+
+  .main-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* .name-details {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }*/
+
+  .name,
+  .email,
+  .password {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
+  }
+
+  .forgot {
+    text-align: right;
+  }
+
+  .forgot a {
+    margin-top: -5px;
+  }
+
+  .verification-code .code,
+  .code1 {
+    color: #888;
+    border: 1px solid #888;
+    padding: 10px 40px;
+    border-radius: 40px;
+  }
+
+  .social {
+    margin-bottom: 30px;
+  }
+}

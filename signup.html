@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-content">
+      <div class="image">
+        <img
+          src="assets/people-wearing-futuristic-high-tech-virtual-reality-glasses.jpg"
+          alt="Sign Up Image"
+        />
+      </div>
+      <div class="main-content">
+        <a href="#">
+          <svg
+            class="back"
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M21 11.016v1.969h-14.156l3.563 3.609-1.406 1.406-6-6 6-6 1.406 1.406-3.563 3.609h14.156z"
+            />
+          </svg>
+        </a>
+        <!--Sign up title-->
+        <h1 class="title">Create an Account</h1>
+
+        <!--Login call to action-->
+        <p class="login-link">
+          Already have an account? <a href="login.html">Log in</a>
+        </p>
+
+        <!--Sign up form-->
+        <form action="#">
+          <div class="name-details">
+            <div class="name">
+              <label for="first-name">First Name</label>
+              <input type="text" placeholder="First Name" required />
+            </div>
+            <div class="name">
+              <label for="last-name">Last Name</label>
+              <input type="text" placeholder="Last Name" required />
+            </div>
+          </div>
+          <div class="email">
+            <label for="email">Email Address</label>
+            <input type="email" placeholder="Email Address" required />
+          </div>
+          <div class="password">
+            <label for="password">Password</label>
+            <div class="password-icon">
+              <input type="password" placeholder="Password" required />
+              <svg
+                class="eye-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M11.859 9h0.141q1.219 0 2.109 0.891t0.891 2.109v0.188zM7.547 9.797q-0.563 1.125-0.563 2.203 0 2.063 1.477 3.539t3.539 1.477q1.078 0 2.203-0.563l-1.547-1.547q-0.375 0.094-0.656 0.094-1.219 0-2.109-0.891t-0.891-2.109q0-0.281 0.094-0.656zM2.016 4.266l1.266-1.266 17.719 17.719-1.266 1.266q-0.234-0.234-1.477-1.453t-1.898-1.875q-2.016 0.844-4.359 0.844-3.703 0-6.703-2.063t-4.313-5.438q0.516-1.219 1.617-2.695t2.133-2.273q-0.563-0.563-1.57-1.594t-1.148-1.172zM12 6.984q-0.938 0-1.828 0.375l-2.156-2.156q1.828-0.703 3.984-0.703 3.703 0 6.68 2.063t4.289 5.438q-1.125 2.766-3.422 4.734l-2.906-2.906q0.375-0.891 0.375-1.828 0-2.063-1.477-3.539t-3.539-1.477z"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div class="button">
+            <input type="submit" value="Create Account" />
+          </div>
+
+          <div class="check">
+            <input type="checkbox" id="terms" required />
+            <label for="terms"
+              >I agree to the <a href="#">Terms and Conditions</a></label
+            >
+          </div>
+
+          <div class="social">
+            <p class="social-text">Or</p>
+            <div class="social-links">
+              <div class="google">
+                <a href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 32 32"
+                  >
+                    <path
+                      fill="#4285f4"
+                      d="M16.32 13.713v5.487h9.075c-0.367 2.353-2.741 6.899-9.075 6.899-5.46 0-9.919-4.519-9.919-10.099s4.46-10.099 9.919-10.099c3.107 0 5.188 1.319 6.38 2.465l4.339-4.184c-2.787-2.601-6.4-4.183-10.719-4.183-8.847 0-16 7.153-16 16s7.153 16 16 16c9.235 0 15.36-6.492 15.36-15.635 0-1.051-0.113-1.853-0.252-2.652z"
+                    />
+                  </svg>
+                  <p>Continue with Google</p></a
+                >
+              </div>
+              <div class="facebook">
+                <a href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 32 32"
+                  >
+                    <path
+                      fill="#1877f2"
+                      d="M31.997 15.999c0-8.836-7.163-15.999-15.999-15.999s-15.999 7.163-15.999 15.999c0 7.985 5.851 14.604 13.499 15.804v-11.18h-4.062v-4.625h4.062v-3.525c0-4.010 2.389-6.225 6.043-6.225 1.75 0 3.581 0.313 3.581 0.313v3.937h-2.017c-1.987 0-2.607 1.233-2.607 2.498v3.001h4.437l-0.709 4.625h-3.728v11.18c7.649-1.2 13.499-7.819 13.499-15.804z"
+                    />
+                  </svg>
+                  <p>Continue with Facebook</p></a
+                >
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
