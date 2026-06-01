@@ -128,7 +128,7 @@ form input[type="password"]:focus {
 
 /*Login - Forgot password link*/
 .forgot {
-  float: right;
+  text-align: right;
   margin-top: -10px;
   margin-bottom: 20px;
 }
@@ -145,7 +145,7 @@ form .button input[type="submit"] {
   height: 40px;
   margin-top: 10px;
   margin-bottom: 20px;
-  font-weight: 200;
+  font-weight: 600;
 }
 
 form .button input[type="submit"]:hover {
@@ -227,7 +227,8 @@ form .button input[type="submit"]:hover {
   align-items: center;
   gap: 10px;
   text-decoration: none;
-  font-weight: 200;
+  font-weight: 400;
+  color: #000;
 }
 
 .social-links .google,
